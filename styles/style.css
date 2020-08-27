@@ -1,0 +1,394 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&family=Miltonian+Tattoo&display=swap');
+
+/* 
+  ##Global Settings
+  ##Global Settings
+*/
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+p, a {
+    font-family:  'Frank Ruhl Libre', serif, Aril, Helvetca;
+    font-size: 1.0em;
+    text-align: justify;
+    margin: 10px;
+    color: #fff;
+}
+
+.paragraph {
+    font-size: 2em;
+}
+
+
+body {
+    background-image: url("../images/background_masterclass.png");
+    background-color: #02070a;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    font-size-adjust: 100%;
+    width: 100%;
+    margin: 0px auto ;
+
+    /* transitions */
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+         -o-transition: all 1s ease;
+            transition: all .5s ease;         
+}
+
+.mainTitle {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family:  'Lato', sans-serif;
+    font-weight: 500;
+    color: #ff6003;
+    padding-top: 40px;
+}
+
+.subtitle {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Miltonian', cursive;
+    font-weight: 500;
+    color: #ff6003;
+    
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    main, header{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+
+    nav{
+        margin: 10px;
+        padding: 46px 10px;
+    }
+    
+    ul li { 
+        display: inline; 
+    }
+    
+    ul li a {
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    ul li a:hover {
+        color: #ff6003;
+        transition: all 0.5s;
+    }
+    
+    ol{
+        float: left;
+        display: grid;
+    }
+    ol li{
+        padding: 25px;
+        width: 20px;
+        display: inline-block;
+        float: left; 
+    }
+
+    .article-masterclass {
+        float: left;
+        width: 55%;
+    }
+
+    .aside-masterclass{
+        float: right;
+        width: 30%;
+    }
+
+    .aside-masterclass p, .dateTimeEvent p{
+        font-size: 1.2em;
+    }
+
+    iframe{
+        width:100%; 
+        height:300px;
+    }
+
+    .article-experience {
+        float: right;
+        width: 70%;
+    }
+    
+    .aside-experience{
+        width: 30%;
+    }
+
+    .dateTimeEvent {
+        display: block;
+        float: left;
+        width: 25%;
+        text-align: left;
+        margin: 25px 0px;
+    }
+    .dateTimeEvent h1{
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 10px;
+        font-family: 'Miltonian', cursive;
+        font-weight: 500;
+        color: #ff6003;
+    }
+
+    .verticalText {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        float: right; 
+    }
+
+    .article-masterclass a, .article-experience a{
+        text-decoration: none;
+        color: #ff6003;
+    }
+
+    .article-tickets{
+        width: 65%;
+    }
+
+    .aside-tickets{
+        float: right;
+        width: 35%;
+    }
+    .ticket-img{
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        width: 800px;
+        z-index: -1
+    }
+
+    .navigation{
+        top: 200px;
+        display: block;
+        position: relative;
+    }
+    
+    .dot{
+        height: 15px;
+        width: 15px;
+        border: solid 2px #fff;
+        margin: 0 2px;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .dotActive{
+        height: 15px;
+        width: 15px;
+        border: solid 2px #ff6003;
+        margin: 0 2px;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active { 
+        display: block !important;  
+    }
+
+    .verticalLine {
+        border-left: 2px solid #ff6003;
+        height: 750px;
+        position: relative;
+        left: 0%;
+        margin-left: -3px;
+        top: 0;
+        float: left;
+      }
+    .verticalLine-G{
+        position: absolute;
+        border-right: 2px solid #ff6003;
+        top: 0;
+        bottom: 0;
+        float: right;
+        z-index: -2
+    }
+    
+    hr{
+        border-top: 2px solid #ff6003;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        margin-top: 30px;  
+    } 
+
+    .card-area{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 95%;
+        height: 300px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        margin: auto;
+        
+      }
+      .card{
+          width: 100%;
+          border-radius: 5px;
+      }
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #e3e3e3;
+        
+      }
+
+      .flip-card-front h1{
+        color: #ff6003;
+        padding: 10px;
+        text-align: center;
+    
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: #e3e3e3;
+        transform: rotateY(180deg); 
+      }
+      .flip-card-back h1{
+        padding: 10px;
+        text-align: center;
+        color: #ff6003;
+      }
+
+      .flip-card-back p{
+        text-align: justify;
+        margin: 10px;
+        color: #000;
+        font-size: 1.2em;
+        padding: 10px;
+      }
+}
+  
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+} 
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    
+}
+  
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    
+}
+  
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    //CSS
+    
+}
+  
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    //CSS
+    
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
+}

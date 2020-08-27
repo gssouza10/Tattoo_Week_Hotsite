@@ -2,126 +2,179 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Tattoo Week - Hotsite</title>
-		<link rel="stylesheet" href="css/Estilo.css">
+	<meta charset="UTF-8">
+  <meta name="description" content="	A basic study of hotsite design">
+  <meta name="keywords" content="Tatoo-week, Tattoo, Masterclass, Experience">
+  <meta name="author" content="Bruno Godinho">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="styles/style.css">
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/Script.js"></script>
-
-		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="scripts/script.js"></script>		
 </head>
 
 <body class="fadeIn">
-    <header>
-        <nav >
-            <ul>
-                <li><a href="div1" onclick="myFunction1()">MASTERCLASS</a></li>
-                <li><a href="div2" onclick="myFunction2()">EXPERIENCE</a></li>
-                <li><a href="div3" onclick="myFunction3()">INGRESSOS</a></li>
-            </ul>
-				</nav>
-		</header>
+  <header>
+    <nav >
+      <ul>
+        <li><a href="firstContent" onclick="myFunction1()">MASTERCLASS</a></li>
+        <li><a href="secondContent" onclick="myFunction2()">EXPERIENCE</a></li>
+        <li><a href="thirdContent" onclick="myFunction3()">INGRESSOS</a></li>
+      </ul>
+		</nav>
+	</header>
+
 	<main>	
-		
-	<div id="div1">
-		<aside class="navigation">
-			<ol>
-					<li><a href="div1" class="dotativo" onclick="myFunction1()"></a></li>
-					<li><a href="div2" class="dot" onclick="myFunction2()"></a></li>
-					<li><a href="div3" class="dot" onclick="myFunction3()"></a></li>
-			</ol>
-		</aside>
+		<div id="firstContent" class="content">
+			<aside class="navigation">
+				<ol>
+					<li><a href="firstContent" class="dotActive" onclick="myFunction1()"></a></li>
+					<li><a href="secondContent" class="dot" onclick="myFunction2()"></a></li>
+					<li><a href="thirdContent" class="dot" onclick="myFunction3()"></a></li>
+				</ol>
+			</aside>
 	
-			<span class="vl"></span>
+			<span class="verticalLine"></span>
 				
-				<article class="article-main-home">
+			<article class="article-masterclass">
+				<h1 class="mainTitle">MASTERCLASS</h1>
+				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>
+				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>        
+				<a href="#">SAIBA MAIS <span>&#8594;</span></a>
+			</article>
 
-						<h1 class="maintitle">MASTERCLASS</h1>
-						<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>
-						<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>        
-						<a href="#">SAIBA MAIS <span>&#8594;</span></a>
-				</article>
+			<aside class="aside-masterclass">
+				<span class="verticalLine-G"></span>
 
-				<aside class="aside-main-home">
-					<span class="vl2"></span>
-					<h1 class="title">LOCAL</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<h1 class="title">DATA</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<h1 class="title">HORA</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					
-					<iframe  src="https://www.youtube.com/embed/TbUS0WOy7kY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h1 class="subtitle">LOCAL</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+				<h1 class="subtitle">DATA</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+				<h1 class="subtitle">HORA</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	
+				<iframe  src="https://www.youtube.com/embed/TbUS0WOy7kY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</aside>
+		</div>
+
+		<div id="secondContent" class="content">
+			<aside class="navigation">
+				<ol>
+					<li><a href="firstContent" class="dot" onclick="myFunction1()"></a></li>
+					<li><a href="secondContent" class="dotActive" onclick="myFunction2()"></a></li>
+					<li><a href="thirdContent" class="dot" onclick="myFunction3()"></a></li>
+				</ol>
 			</aside>
 
-	</div>
-
-	<div id="div2">
-		<aside class="navigation">
-			<ol>
-					<li><a href="div1" class="dot" onclick="myFunction1()"></a></li>
-					<li><a href="div2" class="dotativo" onclick="myFunction2()"></a></li>
-					<li><a href="div3" class="dot" onclick="myFunction3()"></a></li>
-			</ol>
-		</aside>
-
-		<span class="vl"></span>
+			<span class="verticalLine"></span>
 		
+			<article class="article-experience">
 
-		<article class="article-main-experience">
+				<h1 class="mainTitle">EXPERIENCE</h1>
+				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>
+				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>        
+				<a href="#" class="verticalText">SAIBA MAIS <span>&darr;</span></a>
 
+				<section class="dateTimeEvent">
+					<h1 class="subtitle">LOCAL</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</section>
+
+				<section class="dateTimeEvent">
+					<h1 class="subtitle">DATA</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</section>
+
+				<section class="dateTimeEvent">
+					<h1 class="subtitle">HORA</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</section>
+			</article>
+
+			<aside class="aside-experience">
 			
-				<h1 class="maintitle">EXPERIENCE</h1>
-				<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>
-				<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>        
-				<a href="#" class="expecial">SAIBA MAIS <span>&darr;</span></a>
+			</aside>
+		</div>
 
-				<section class="adc">
-					<h1 class="">LOCAL</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</section>
-				<section class="adc">
-					<h1 class="">DATA</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</section>
-				<section class="adc">
-					<h1 class="">HORA</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</section>
-
-		</article>
-
-		<aside class="aside-main-experience">
-			
-		</aside>
-	</div>
-
-		 <div id="div3">
+		<div id="thirdContent" class="content">
 
 			<aside class="navigation">
 				<ol>
-						<li><a href="div1" class="dot" onclick="myFunction1()"></a></li>
-						<li><a href="div2" class="dot" onclick="myFunction2()"></a></li>
-						<li><a href="div3" class="dotativo" onclick="myFunction3()"></a></li>
+					<li><a href="firstContent" class="dot" onclick="myFunction1()"></a></li>
+					<li><a href="secondContent" class="dot" onclick="myFunction2()"></a></li>
+					<li><a href="thirdContent" class="dotActive" onclick="myFunction3()"></a></li>
 				</ol>
 			</aside>
 			 
-			<span class="vl3"></span>
-			<hr class="hl">
+			<span class="verticalLine"></span>
+			<hr>
 		
-		<article class="article-main-home">
-			<h1 class="maintitle">INGRESSOS</h1>
+			<article class="article-tickets">
+				
 
-		</article>
+				<h1 class="mainTitle">INGRESSOS</h1>
+			<div class="card-area">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<h1>MEIA SOCIAL</h1>
+							<img class="card" src="images/Card.jpg" alt="">
+						</div>
+						<div class="flip-card-back">
+							<h1>MEIA SOCIAL</h1> 
+							<p class="paragraph">Para garantir a meia social é só levar 1kg de alimento não perecível no dia do evento! Fácil, né?</p>
+							<p class="paragraph">Venha para a Tattoo Week e faça o bem! Garanta a sua Meia Entra Social!</p>
+						</div>
+					</div>
+				</div>
 
-		<aside class="aside-main-home">
-			<span class="vl2"></span>
-		</aside>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<h1>INTEIRA</h1>
+							<img class="card" src="images/Card.jpg" alt="">
+						</div>
+						<div class="flip-card-back">
+							<h1>INTEIRA</h1> 
+							<p class="paragraph">A entrada INTEIRA garante a entrada na maior convenção de Tatuagem do mundo, acesso a todos os shows do dia escolhido e muita diversão.</p>
+							
+						</div>
+					</div>
+				</div>
 
-	 	</div>
-		 
- </main>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<h1>FÃ TATTOO</h1>
+							<img class="card" src="images/Card.jpg" alt="">
+						</div>
+						<div class="flip-card-back">
+							<h1>FÃ TATTOO</h1> 
+							<p class="paragraph">Com o PASSAPORTE FÃ TATTOO - Você pode ir TODOS os dias da Tattoo Week e curtir TODAS as atrações da maior convenção de tatuagens do mundo! Esse é para fã mesmo! Compre já!</p>
+							
+						</div>
+					</div>
+				</div>
+
+				
+
+			</div>
+
+			
+
+			</article>
+
+			<aside class="aside-tickets">
+				<span class="verticalLine-G"></span>
+				
+
+				<img class="ticket-img" src="images/data.jpg" alt="">
+			</aside>
+
+		</div> 
+ 	</main>
 </body>
-
 </html>
