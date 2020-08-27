@@ -27,16 +27,11 @@ p, a {
     font-size: 2em;
 }
 
-
 body {
     background-image: url("../images/background_masterclass.png");
-    background-color: #02070a;
-    background-position: center;
     background-repeat: no-repeat;
-    
-    font-size-adjust: 100%;
-    width: 100%;
-    margin: 0px auto ;
+    background-color: #000;
+    background-position-x: center;
 
     /* transitions */
     -webkit-transition: all 1s ease;
@@ -247,15 +242,15 @@ body {
         background-color: transparent;
         width: 95%;
         height: 300px;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
-        margin: auto;
-        
+        perspective: 1000px;
+        margin: auto;  
       }
+
       .card{
           width: 100%;
           border-radius: 5px;
       }
-      /* This container is needed to position the front and back side */
+
       .flip-card-inner {
         position: relative;
         width: 100%;
@@ -265,12 +260,10 @@ body {
         transform-style: preserve-3d;
       }
       
-      /* Do an horizontal flip when you move the mouse over the flip box container */
       .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
       }
       
-      /* Position the front and back side */
       .flip-card-front, .flip-card-back {
         position: absolute;
         width: 100%;
@@ -279,7 +272,6 @@ body {
         border-radius: 5px;
       }
       
-      /* Style the front side (fallback if image is missing) */
       .flip-card-front {
         background-color: #e3e3e3;
         
@@ -292,7 +284,6 @@ body {
     
       }
       
-      /* Style the back side */
       .flip-card-back {
         background-color: #e3e3e3;
         transform: rotateY(180deg); 
