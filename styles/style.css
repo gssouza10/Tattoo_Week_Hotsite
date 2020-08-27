@@ -131,6 +131,11 @@ body {
     
     .aside-experience{
         width: 30%;
+        text-align: center;
+    }
+
+    .aside-experience li{
+        padding: 20px 0px;
     }
 
     .dateTimeEvent {
