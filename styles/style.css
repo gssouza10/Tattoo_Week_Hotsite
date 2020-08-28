@@ -105,14 +105,38 @@ body {
         float: left; 
     }
 
+    .masterclass-content{
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .article-masterclass {
-        float: left;
+        display: flex;
+        flex-direction: column;
         width: 55%;
     }
 
+    .sponsors{
+        width: 55%;
+        clear: both;
+    }
+
+    .sponsors ul{
+        display: flex;
+        flex-direction: row;
+        justify-items: left;
+        
+    }
+
     .aside-masterclass{
-        float: right;
-        width: 30%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+
     }
 
     .aside-masterclass p, .dateTimeEvent p{
@@ -134,8 +158,18 @@ body {
         text-align: center;
     }
 
+    .aside-experience ul{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
     .aside-experience li{
         padding: 20px 0px;
+
+        text-align: center;
     }
 
     .dateTimeEvent {
