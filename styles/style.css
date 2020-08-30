@@ -21,6 +21,7 @@ p, a {
     text-align: justify;
     margin: 10px;
     color: #fff;
+    text-shadow: #000 1px 2px 5px;
 }
 
 .paragraph {
@@ -29,6 +30,7 @@ p, a {
 
 body {
     background-image: url("../images/background_masterclass.png");
+    
     background-repeat: no-repeat;
     background-color: #000;
     background-position-x: center;
@@ -49,6 +51,7 @@ body {
     font-weight: 500;
     color: #ff6003;
     padding-top: 40px;
+    text-shadow: #000 1px 2px 5px;
 }
 
 .subtitle {
@@ -73,10 +76,23 @@ body {
         height: 100%;
         margin: auto;
     }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    header a{
+        color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    }
+     
     nav{
         margin: 10px;
-        padding: 46px 10px;
+        padding: 50px;
     }
     
     ul li { 
@@ -87,17 +103,27 @@ body {
         color: #fff;
         padding: 5px;
         text-decoration: none;
+        font-family:  'Lato', sans-serif;
     }
     
     ul li a:hover {
         color: #ff6003;
         transition: all 0.5s;
     }
+
+    .nav-item a:active{
+        color: #ff6003 !important;
+    }
+      
+    .nav-item a:focus{
+        color: #ff6003 !important;
+    }
     
     ol{
         float: left;
         display: grid;
     }
+
     ol li{
         padding: 25px;
         width: 20px;
@@ -105,7 +131,13 @@ body {
         float: left; 
     }
 
-    .masterclass-content{
+    .wrap{
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrap-experience{
+        flex-direction: row-reverse;
         align-items: flex-start;
         display: flex;
         justify-content: space-between;
@@ -117,16 +149,18 @@ body {
         width: 55%;
     }
 
-    .sponsors{
-        width: 55%;
-        clear: both;
+    .sponsors-content-masterclass{
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
 
-    .sponsors ul{
+    .sponsors-content-masterclass ul{
         display: flex;
         flex-direction: row;
-        justify-items: left;
-        
+        justify-items: center;
+        padding-top: 50px;
     }
 
     .aside-masterclass{
@@ -146,16 +180,22 @@ body {
     iframe{
         width:100%; 
         height:300px;
+        padding: 10px;
     }
 
     .article-experience {
-        float: right;
+        display: flex;
+        flex-direction: column;
         width: 70%;
     }
     
     .aside-experience{
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
         width: 30%;
-        text-align: center;
+        height: 100%;
     }
 
     .aside-experience ul{
@@ -168,15 +208,18 @@ body {
 
     .aside-experience li{
         padding: 20px 0px;
-
         text-align: center;
     }
 
+    .dateTimeEvent-content{
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     .dateTimeEvent {
-        display: block;
-        float: left;
         width: 25%;
-        text-align: left;
         margin: 25px 0px;
     }
     .dateTimeEvent h1{
@@ -200,13 +243,36 @@ body {
     }
 
     .article-tickets{
-        width: 65%;
+    flex-direction: column;
+    width: 65%;
+
     }
 
     .aside-tickets{
-        float: right;
-        width: 35%;
+        display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+
     }
+    
+    .aside-tickets ul{
+        display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 40px;
+    }
+
+    .aside-tickets li{
+        padding: 20px 0px;
+    text-align: center;
+    }
+    
+    
+
     .ticket-img{
         position: absolute;
         right: 0px;
@@ -282,7 +348,8 @@ body {
         width: 95%;
         height: 300px;
         perspective: 1000px;
-        margin: auto;  
+        margin: auto;
+        opacity: .8;  
       }
 
       .card{
@@ -422,3 +489,4 @@ body {
     -o-animation: fadeIn 3s ease-in-out;
     animation: fadeIn 3s ease-in-out;
 }
+

@@ -2,27 +2,37 @@
 <html lang="pt-br">
 
 <head>
+	
 	<meta charset="UTF-8">
   <meta name="description" content="	A basic study of hotsite design">
   <meta name="keywords" content="Tatoo-week, Tattoo, Masterclass, Experience">
-  <meta name="author" content="Bruno Godinho">
+	<meta name="author" content="Bruno Godinho">
+	<meta name="theme-color" content="#000">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
+	<link rel="icon" href="images/icon.png">
+
 	<link rel="stylesheet" href="styles/style.css">
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="scripts/script.js"></script>		
+	<script src="scripts/script.js"></script>	
+
+	<title>Tattoo Week</title>	
 </head>
 
 <body class="fadeIn">
   <header>
     <nav >
-      <ul>
-        <li><a href="firstContent" onclick="myFunction1()">MASTERCLASS</a></li>
-        <li><a href="secondContent" onclick="myFunction2()">EXPERIENCE</a></li>
-        <li><a href="thirdContent" onclick="myFunction3()">INGRESSOS</a></li>
+      <ul class="">
+        <li class="nav-item"><a href="firstContent" onclick="myFunction1()">MASTERCLASS</a></li>
+        <li class="nav-item"><a href="secondContent" onclick="myFunction2()">EXPERIENCE</a></li>
+        <li class="nav-item"><a href="thirdContent" onclick="myFunction3()">INGRESSOS</a></li>
       </ul>
 		</nav>
+		
+		<a>
+			Siga-nos
+		</a>
 	</header>
 
 	<main>	
@@ -37,15 +47,15 @@
 	
 			<span class="verticalLine"></span>
 			
-			<section class="masterclass-content">
+			<section class="wrap">
 			<article class="article-masterclass">
 				<h1 class="mainTitle">MASTERCLASS</h1>
-				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>
-				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>        
+				<p class="paragraph">O MasterClass Tatto Week é um workshop muito bem elaborado para tatuadores, piercers e micropigmentadores que estão em busca de aperfeiçoar seus conhecimentos, atingindo um novo nivel e conceito de atuação em sua área.</p>
+				<p class="paragraph">Masterclass é uma vivência de aprendizado focada e densa. São mais de 16h de conteúdo e cada instante foi pensado em entregar a maior quantia de instruções no tempo disponivel, sendo assim é um Workshop totalmente focado em seu aprendizado.</p>        
 				<a href="#">SAIBA MAIS <span>&#8594;</span></a>
-			</article>
+			
 
-			<!-- <section class="sponsors">
+			<section class="sponsors-content-masterclass">
 				<ul>
 					<li><img src="images/patrocinador2.png" alt=""></li>
 					<li><img src="images/patrocinador3.png" alt=""></li>
@@ -53,7 +63,8 @@
 					<li><img src="images/patrocinador5.png" alt=""></li>
 					<li><img src="images/patrocinador1.png" alt=""></li>
 				</ul>
-			</section> -->
+			</section>
+		</article>
 
 			<aside class="aside-masterclass">
 				<span class="verticalLine-G"></span>
@@ -82,14 +93,15 @@
 			</aside>
 
 			<span class="verticalLine"></span>
-		
+			<section class="wrap-experience">
 			<article class="article-experience">
 
 				<h1 class="mainTitle">EXPERIENCE</h1>
-				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>
-				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit consequatur, numquam reprehenderit quis ex eligendi laudantium non cupiditate quidem sapiente, vero architecto, consequuntur adipisci modi asperiores expedita culpa dolorum.</p>        
-				<a href="#" class="verticalText">SAIBA MAIS <span>&darr;</span></a>
+				<p class="paragraph">Planejado pela Tatto Week, o Tatto Experience é o maior evento de tatuagens e piercing já realizado. Esse evento é uma conveção de tatuagens do mundo, além de ser realizado 4 vezes ao ano, em diferentes estados e localidades.
+					Além de contar com a presença de tatuadores e piercers profissionais, nacionais e internacionais, que estarão apresentando seus trabalhos, fazendo tattos/piercing durante toda a feira.</p>
 
+
+				<section class="dateTimeEvent-content">
 				<section class="dateTimeEvent">
 					<h1 class="subtitle">LOCAL</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -104,6 +116,10 @@
 					<h1 class="subtitle">HORA</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</section>
+
+				<a href="#" class="verticalText">SAIBA MAIS <span>&darr;</span></a>
+			</section>
+
 			</article>
 
 			<aside class="aside-experience">
@@ -115,6 +131,7 @@
 					<li><img src="images/patrocinador1.png" alt=""></li>
 				</ul>
 			</aside>
+			</section>
 		</div>
 
 		<div id="thirdContent" class="content">
@@ -129,7 +146,7 @@
 			 
 			<span class="verticalLine"></span>
 			<hr>
-		
+		<section class="wrap">
 			<article class="article-tickets">
 				
 
@@ -181,9 +198,20 @@
 
 			<aside class="aside-tickets">
 				<span class="verticalLine-G"></span>
+
+				<!-- <section class="sponsors-content-tickets"> -->
+					<ul>
+						<li><img src="images/patrocinador2.png" alt=""><img src="images/patrocinador3.png" alt=""></li>
+						
+						<li><img src="images/patrocinador4.png" alt=""><img src="images/patrocinador5.png" alt=""></li>
+						<li><img src="images/patrocinador1.png" alt=""></li>
+					</ul>
+				<!-- </section> -->
 				
-				<img class="ticket-img" src="images/data.jpg" alt="">
+				<!-- <img class="ticket-img" src="images/data.jpg" alt=""> -->
 			</aside>
+
+		</section>
 
 		</div> 
  	</main>

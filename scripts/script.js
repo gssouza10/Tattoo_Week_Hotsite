@@ -14,6 +14,8 @@ $(function(){
   return false;
 });
 
+
+
 function myFunction1() {
   document.body.style.backgroundImage = "url('images/background_masterclass.png')";
   
