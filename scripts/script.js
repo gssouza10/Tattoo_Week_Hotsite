@@ -17,7 +17,7 @@ $(function(){
 
 
 function myFunction1() {
-  document.body.style.backgroundImage = "url('images/background_masterclass.png')";
+  document.body.style.backgroundImage = "url('images/background_masterclass_tattoo.png')";
   
 }
 function myFunction2() {

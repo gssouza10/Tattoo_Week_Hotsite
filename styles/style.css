@@ -29,7 +29,7 @@ p, a {
 }
 
 body {
-    background-image: url("../images/background_masterclass.png");
+    background-image: url("../images/background_masterclass_tattoo.png");
     
     background-repeat: no-repeat;
     background-color: #000;
@@ -50,7 +50,6 @@ body {
     font-family:  'Lato', sans-serif;
     font-weight: 500;
     color: #ff6003;
-    padding-top: 40px;
     text-shadow: #000 1px 2px 5px;
 }
 
@@ -187,6 +186,7 @@ body {
         display: flex;
         flex-direction: column;
         width: 70%;
+        text-align: right;
     }
     
     .aside-experience{
@@ -220,7 +220,7 @@ body {
 
     .dateTimeEvent {
         width: 25%;
-        margin: 25px 0px;
+        margin: 10px 0px;
     }
     .dateTimeEvent h1{
         font-size: 3em;
@@ -234,7 +234,18 @@ body {
     .verticalText {
         writing-mode: vertical-rl;
         text-orientation: upright;
-        float: right; 
+        font-size: 0.9em;
+    }
+
+    .iframe-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .iframe{
+        width: 50%;
+        height: 110px;
+        
     }
 
     .article-masterclass a, .article-experience a{
@@ -270,15 +281,31 @@ body {
         padding: 20px 0px;
     text-align: center;
     }
-    
-    
-
+ 
     .ticket-img{
         position: absolute;
         right: 0px;
         bottom: 0;
         width: 800px;
         z-index: -1
+    }
+
+    .buy{
+        width: 100%;
+        margin-top: 150px;
+        padding: 20px;
+        background-color: beige;
+        text-align: center;
+        font-family: 'Miltonian', cursive;
+        color: #ff6003;
+        font-size: 2.0em;
+        text-decoration: none;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(254,97,6,1) 0%, rgb(0, 0, 0) 100%);
+        border-top: 2px solid #ff6003;
+        border-bottom: 2px solid #ff6003;
+        margin-left: -1px;
+}
     }
 
     .navigation{
@@ -334,7 +361,7 @@ body {
         width: 100%;
         position: absolute;
         left: 0;
-        margin-top: 30px;  
+        margin-top: 8px;  
     } 
 
     .card-area{
