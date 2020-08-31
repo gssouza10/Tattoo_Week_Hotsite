@@ -130,6 +130,24 @@ body {
         float: left; 
     }
 
+    
+    .socialMedia a{
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        
+    }
+    .socialMedia ul{
+        color: #ff6003;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.0em;
+        font-family: 'Lato', sans-serif;
+    }
+    .socialMedia img{
+        width: 30px;
+    }
+
     .wrap{
         align-items: flex-start;
         display: flex;
