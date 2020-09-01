@@ -3,7 +3,7 @@ $(function(){
   $(".content").css("display", "none");
   $(".content#firstContent").addClass("active");
 
-  $("a").on("click", function( e ){         
+  $(".transfer").on("click", function( e ){         
     e.preventDefault();
       
     $(".content").removeClass("active");
@@ -11,7 +11,6 @@ $(function(){
       $("#"+id+"").addClass("active");
       
   });
-  return false;
 });
 
 
