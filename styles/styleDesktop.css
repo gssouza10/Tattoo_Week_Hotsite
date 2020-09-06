@@ -387,6 +387,7 @@
       border-radius: 10px;
       transform-style: preserve-3d;
       transition: all 0.8s ease;
+      
     }
     
     /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
@@ -406,6 +407,7 @@
       overflow: hidden;
       background-color: #e3e3e3;
       color: #000;
+      opacity: .9;
     }
     
     .thefront img{
