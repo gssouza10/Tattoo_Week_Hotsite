@@ -148,7 +148,7 @@
     }
 
     .sponsors-content-masterclass img, .aside-experience img, .aside-tickets img{
-       
+        width: 130px;
         padding-top: 10px;
       }
 
@@ -366,6 +366,7 @@
 
     #banner{
         padding: 0px;
+        width: 100%;
     }
 
 
