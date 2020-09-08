@@ -96,7 +96,8 @@ ul li a {
   padding: 5px;
   text-decoration: none;
   font-family:  'Lato', sans-serif;
-  font-size: .7em;
+  font-size: 1.0em;
+
 }
 
 ul li a:hover {

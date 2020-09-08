@@ -66,69 +66,80 @@ height: 100%;
 margin: auto;
 }
 header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 0px;
-border-bottom: #ff6003 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header a{
-color: #fff;
-padding: 5px;
-text-decoration: none;
-font-family: 'Lato', sans-serif;
-text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
 }
-
+ 
 nav{
-display: flex;
-width: 100%;
-justify-content: space-around;
+    margin: 10px;
+    padding: 30px;
 }
 
 ul li { 
-display: inline; 
-
+    display: inline; 
 }
 
 ul li a {
-color: #fff;
-padding: 5px;
-text-decoration: none;
-font-family:  'Lato', sans-serif;
-font-size: .7em;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    font-family:  'Lato', sans-serif;
 }
 
 ul li a:hover {
-color: #ff6003;
-transition: all 0.5s;
+    color: #ff6003;
+    transition: all 0.5s;
 }
 
 .nav-item a:active{
-color: #ff6003 !important;
-text-decoration: underline;
+    color: #ff6003 !important;
 }
-
+  
 .nav-item a:focus{
-color: #ff6003 !important;
-text-decoration: underline;
+    color: #ff6003 !important;
 }
 
 ol{
-float: left;
-display: grid;
+    float: left;
+    display: grid;
 }
 
 ol li{
-padding: 25px;
-width: 20px;
-display: inline-block;
-float: left; 
+    padding: 25px;
+    width: 20px;
+    display: inline-block;
+    float: left; 
 }
 
 .socialMedia{
-display: none;
+  padding: 0px 20px;
+}
+
+.socialMedia a{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    
+    
+}
+.socialMedia ul{
+    color: #ff6003;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.0em;
+    font-family: 'Lato', sans-serif;
+}
+.socialMedia img{
+    width: 20px;
 }
 
 .wrap{
