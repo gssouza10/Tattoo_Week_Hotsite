@@ -430,7 +430,7 @@ transform: rotateY(180deg);
 .thefront p, .theback p{
 
   margin: 1rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-align: start;
   color: #000;
 }

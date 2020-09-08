@@ -44,7 +44,7 @@
 
   
     main, header{
-        width: 80%;
+        width: 95%;
         height: 100%;
         margin: auto;
     }
@@ -147,12 +147,18 @@
         text-align: center;
     }
 
+    .sponsors-content-masterclass img, .aside-experience img, .aside-tickets img{
+       
+        padding-top: 10px;
+      }
+
+
     .aside-masterclass{
         display: flex;
         align-items: left;
         justify-content: center;
         flex-direction: column;
-        width: 35%;
+        width: 32%;
         height: 100%;
     }
 
@@ -358,6 +364,10 @@
         margin-top: 8px;  
     } 
 
+    #banner{
+        padding: 0px;
+    }
+
 
 
 
@@ -450,28 +460,3 @@
    
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-*/
-/*   
-@media (min-width: 1025px) and (max-width: 1280px) {
-    
-    //CSS
-}  */
-
-  
