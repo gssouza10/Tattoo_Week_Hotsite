@@ -418,6 +418,7 @@ hr{
   background-color: #e3e3e3;
   color: #000;
   opacity: .9;
+  border-radius: 5px;
 }
 
 .thefront img{
@@ -437,6 +438,7 @@ hr{
   color: #333;
   text-align: center;
   transform: rotateY(180deg);
+  border-radius: 5px;
 }
 
 
