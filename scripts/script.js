@@ -22,6 +22,6 @@ function myFunction2() {
  
 }
 function myFunction3() {
-  document.body.style.backgroundImage = "url('images/background_tickets.png')";
+  document.body.style.backgroundImage = "url('images/background_tickets.jpg')";
   
 }
