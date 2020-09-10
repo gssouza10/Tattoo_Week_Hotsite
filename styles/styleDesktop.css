@@ -78,19 +78,19 @@
         font-family:  'Lato', sans-serif;
     }
     
-    ul li a:hover {
-        color: #ff6003;
-        transition: all 0.5s;
-    }
-
-    .nav-item a:active{
-        color: #ff6003 !important;
-    }
-      
-    .nav-item a:focus{
-        color: #ff6003 !important;
+     ul li a:hover {
+        color: #ff3203;
+        transition: all 1.0s;
     }
     
+    .activo{
+        color: #ff6003 !important;
+    }
+
+    .activo a{
+        color: #ff6003;
+    }
+   
     ol{
         float: left;
         display: grid;

@@ -20,18 +20,18 @@
 	<link rel="stylesheet" href="styles/styleDesktop.css">
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="scripts/script.js"></script>	
+	
 
 	<title>Tattoo Week</title>	
 </head>
 
 <body class="fadeIn">
   <header>
-    <nav >
+    <nav id="navbar">
       <ul class="">
-        <li class="nav-item"><a class="transfer" href="firstContent" onclick="myFunction1()">MASTERCLASS</a></li>
-        <li class="nav-item"><a class="transfer" href="secondContent" onclick="myFunction2()">EXPERIENCE</a></li>
-        <li class="nav-item"><a class="transfer" href="thirdContent" onclick="myFunction3()">INGRESSOS</a></li>
+        <li class="activo"><a class="transfer" href="firstContent" onclick="myFunction1()">MASTERCLASS</a></li>
+        <li><a class="transfer" href="secondContent" onclick="myFunction2()">EXPERIENCE</a></li>
+        <li><a class="transfer" href="thirdContent" onclick="myFunction3()">INGRESSOS</a></li>
       </ul>
 		</nav>
 		
@@ -52,7 +52,7 @@
 		<div id="firstContent" class="content">
 			<aside class="navigation">
 				<ol>
-					<li><a href="firstContent" class="dotActive transfer" onclick="myFunction1()"></a></li>
+					<li><a href="firstContent" class=" dotActive transfer" onclick="myFunction1()"></a></li>
 					<li><a href="secondContent" class="dot transfer" onclick="myFunction2()"></a></li>
 					<li><a href="thirdContent" class="dot transfer" onclick="myFunction3()"></a></li>
 				</ol>
@@ -264,6 +264,8 @@
 		</section>
 
 		</div> 
- 	</main>
+	 </main>
+	 
+	 <script src="scripts/script.js"></script>
 </body>
 </html>
