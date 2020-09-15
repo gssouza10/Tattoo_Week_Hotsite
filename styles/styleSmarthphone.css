@@ -198,6 +198,13 @@
       
   }
 
+  .dateTimeEvent p, .date p{
+    text-align: center;
+    
+}
+
+  
+
   iframe{
       width: 95%;
       height: 300px;
